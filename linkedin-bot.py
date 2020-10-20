@@ -1,6 +1,8 @@
 import discord
 import asyncio
 from discord.ext import commands
+from dotenv import load_dotenv
+import os
 
 bot = commands.Bot(command_prefix = '.linkedin ')
 bot.remove_command("help")
@@ -106,6 +108,5 @@ async def help(ctx):
 	)
 	await ctx.send(embed = embed)
 
-if __name__ == '__main__':
-    import token
-    bot.run(token.token)
+load_dotenv('.env')
+bot.run(os.getenv('BOT_TOKEN'))
