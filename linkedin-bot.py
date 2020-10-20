@@ -106,5 +106,6 @@ async def help(ctx):
 	)
 	await ctx.send(embed = embed)
 
-token = open('token.txt', 'r').read()
-bot.run(token)
+if __name__ == '__main__':
+    import token
+    bot.run(token.token)
