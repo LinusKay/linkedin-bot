@@ -1,4 +1,4 @@
-# linkedin-bot
+# LinkedIn Bot
 A Discord bot that allows users to share their linkedin profiles in a more fashionable style, using flashy embeds. super wow
 
 Commands
